@@ -24,6 +24,7 @@ const AuthStack = () => {
         setIsFirstLaunch(false);
       }
     }); // Add some error handling, also you can simply do setIsFirstLaunch(null)
+  
   }, []);
 
   if (isFirstLaunch === null) {

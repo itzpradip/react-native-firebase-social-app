@@ -1,15 +1,22 @@
 import React, {useContext, useState} from 'react';
-import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native';
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+  Platform,
+  StyleSheet,
+} from 'react-native';
 import FormInput from '../components/FormInput';
 import FormButton from '../components/FormButton';
 import SocialButton from '../components/SocialButton';
-import { AuthContext } from '../navigation/AuthProvider';
+import {AuthContext} from '../navigation/AuthProvider';
 
 const LoginScreen = ({navigation}) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  const {login} = useContext(AuthContext);
+  const {login, googleLogin, fbLogin} = useContext(AuthContext);
 
   return (
     <View style={styles.container}>
@@ -46,21 +53,25 @@ const LoginScreen = ({navigation}) => {
         <Text style={styles.navButtonText}>Forgot Password?</Text>
       </TouchableOpacity>
 
-      <SocialButton 
-        buttonTitle="Sign In with Facebook"
-        btnType="facebook"
-        color="#4867aa"
-        backgroundColor="#e6eaf4"
-        onPress={() => {}}
-      />
-      
-      <SocialButton 
-        buttonTitle="Sign In with Google"
-        btnType="google"
-        color="#de4d41"
-        backgroundColor="#f5e7ea"
-        onPress={() => {}}
-      />
+      {Platform.OS === 'android' ? (
+        <View>
+          <SocialButton
+            buttonTitle="Sign In with Facebook"
+            btnType="facebook"
+            color="#4867aa"
+            backgroundColor="#e6eaf4"
+            onPress={() => fbLogin()}
+          />
+
+          <SocialButton
+            buttonTitle="Sign In with Google"
+            btnType="google"
+            color="#de4d41"
+            backgroundColor="#f5e7ea"
+            onPress={() => googleLogin()}
+          />
+        </View>
+      ) : null}
 
       <TouchableOpacity
         style={styles.forgotButton}

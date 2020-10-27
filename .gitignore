@@ -57,3 +57,8 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# Remove Credentials
+/android/app/google-services.json
+GoogleService-Info.plist
+.env
