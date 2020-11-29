@@ -60,13 +60,6 @@ const FeedStack = ({navigation}) => (
             <Ionicons name="arrow-back" size={25} color="#2e64e5" />
           </View>
         ),
-        headerRight: () => (
-          <View style={{marginRight: 15}}>
-            <TouchableOpacity>
-              <Text style={{fontWeight:'600', fontSize: 18, color: '#2e64e5'}}>Post</Text>
-            </TouchableOpacity>
-          </View>
-        ),
       }}
     />
   </Stack.Navigator>
