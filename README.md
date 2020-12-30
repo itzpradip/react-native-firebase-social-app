@@ -10,8 +10,9 @@ This repository is based on my YouTube tutorial series where I'm creating a reac
 - [Facebook Login in React Native with Firebase](https://youtu.be/pDLo7Pfcvfk)
 - [Home/Feed Screen UI of Social App using Styled-Components](https://youtu.be/iyNmGXt4vNA)
 - [React Native Firebase Storage Tutorial for Storing Photos](https://youtu.be/1GpOS5mrGHI)
+- [React Native Firebase Firestore Tutorial | Create/Fetch/Delete Posts](https://youtu.be/ncxmNxNk2yc)
 
-## Pakcages Used
+## Packages Used
 - [React Native Onboarding Swiper](https://github.com/jfilter/react-native-onboarding-swiper)
 - [React Navigation v5](https://reactnavigation.org/)
 - [React Native Firebase v6](https://rnfirebase.io/)
