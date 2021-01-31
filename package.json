@@ -26,11 +26,13 @@
     "react-native-action-button": "^2.8.5",
     "react-native-fbsdk": "^2.0.0",
     "react-native-gesture-handler": "^1.8.0",
+    "react-native-gifted-chat": "^0.16.3",
     "react-native-image-crop-picker": "^0.35.1",
     "react-native-onboarding-swiper": "^1.1.4",
     "react-native-reanimated": "^1.13.0",
     "react-native-safe-area-context": "^3.1.7",
     "react-native-screens": "^2.10.1",
+    "react-native-skeleton-placeholder": "^3.0.2",
     "react-native-vector-icons": "^7.1.0",
     "styled-components": "^5.2.0"
   },
