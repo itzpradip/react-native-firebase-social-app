@@ -13,6 +13,7 @@ This repository is based on my YouTube tutorial series where I'm creating a reac
 - [React Native Firebase Firestore Tutorial | Create/Fetch/Delete Posts](https://youtu.be/ncxmNxNk2yc)
 - [Image Loader & Shimmer Effect for Posts on Home Screen](https://youtu.be/bHWoW_aNmnY)
 - [Messages & Chat Screen UI](https://youtu.be/bGGeD5RkdzQ)
+- [User Profile with Firebase](https://youtu.be/aFtYsghw-1k)
 
 ## Packages Used
 - [React Native Onboarding Swiper](https://github.com/jfilter/react-native-onboarding-swiper)
